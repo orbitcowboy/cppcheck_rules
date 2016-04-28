@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<rule>
+	<tokenlist>normal</tokenlist>
+	<pattern><![CDATA[([a-zA-Z][a-zA-Z0-9]*)(\s*\.\s*find)(\s*\(\s*\"[ -~]*\"\s*\))[ -\{\n]*(\1\2\3)+[ -z\n]]]></pattern>
+	<message>
+		<severity>style</severity>
+		<summary>Found identical consecutive std::string::find calls.</summary>
+	</message>
+</rule>
